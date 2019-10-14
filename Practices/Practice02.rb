@@ -11,7 +11,7 @@ end
 puts person_age("Cxristian",18)
 
 # 2.0
-# Transforms celsius to fahrenheit
+# Transforms celsius to fahrenheit.
 # @param celsius of type float
 def celsius_to_fahrenheit(celsius = 0.0)
   fahrenheit = (((9 * celsius) / 5) + 32)
@@ -19,7 +19,7 @@ def celsius_to_fahrenheit(celsius = 0.0)
 end
 puts celsius_to_fahrenheit(32.0)
 
-# Transforms fahrenheit to celsius 
+# Transforms fahrenheit to celsius.
 # @param fahrenheit of type float
 def fahrenheit_to_celsius(fahrenheit = 0.0)
   celsius = (5 * (fahrenheit - 32)) / 9
@@ -28,7 +28,7 @@ end
 puts fahrenheit_to_celsius(1.0)
 
 # 3.0
-# prints a passenger name, a destination city and the price of ticket in dollars
+# prints a passenger name, a destination city and the price of ticket in dollars.
 #
 # @param passenger_name is name of user
 # @param price is the price of the ticket without converted
@@ -39,7 +39,7 @@ def message_travel(passenger_name, price, destination = 'CBBA')
 end
 
 # 4.0
-# Converts Currency to Dollars
+# Converts Currency to Dollars.
 #
 # @param price of type float
 # @return transformation is the conversion to dollars
@@ -67,7 +67,7 @@ value_hours, value_minutes = converter_seconds(number_seconds)
 puts "Value in hours : #{value_hours}, Value in minutes : #{value_minutes}"
 
 # 6.0
-# Converts Currency to Dollars
+# Converts Currency to Dollars.
 #
 # @param price of type float
 # @return transformation is the conversion to dollars

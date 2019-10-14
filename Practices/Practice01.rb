@@ -1,5 +1,5 @@
 =begin
-@Cxristian
+@Cxristian.
 This method show the sum
 only with two numbers
 =end
