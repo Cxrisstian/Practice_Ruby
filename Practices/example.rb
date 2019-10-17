@@ -1,45 +1,30 @@
-class Register
 
-  attr_reader :quantity_persons
-  def initialize(quantity)
-    @quantity_persons = quantity
-  end
-  person0 = Persons.new(@quantity_persons)
-  person0.add_persons
+USER_FORMAT = /^[0-9a-z]+$/
+PASSWORD_FORMAT = /^[a-zA-Z0-9]\w{7,16}$/
+EMAIL_FORMAT = /[A-Za-z]+@[a-z]+\.[a-z]+/
 
-  def count_persons
-    p @quantity_persons
-  end
+def ask_user_name(name)
+  puts name if name.match(USER_FORMAT)
 end
 
-class Persons
-  attr_reader :id, :name_person
-  attr_writer :name_person
-
-  def initialize(size)
-    @hash_person = {}
-    @id = 0
-    @size = size
-  end
-  
-  def add_persons
-    i = 0
-    while i < @size
-      id = next_person_id
-      print 'Enter a name : '
-      name_person = gets.chomp
-      @hash_person[id] = name_person
-      i += 1
-    end
-    @hash_person
-  end
-
-
-  private
-    def next_person_id
-      @id += 1
-    end
+def ask_password(name)
+  puts name if name.match(PASSWORD_FORMAT)
 end
 
-register = Register.new(2)
-register.count_persons
+def ask_email(name)
+  puts name if name.match(EMAIL_FORMAT)
+end
+
+ask_user_name("Coco")
+ask_user_name("CANGREJO")
+ask_user_name("carlitos")
+
+ask_password('1234567')
+ask_password('l2345678')
+ask_password('EstePaswordEsDemasiadoLargoX2')
+ask_password('C0n7raseNha')
+
+ask_email('Cxristian@gmail.com')
+ask_email('Cxristian@gmail.com.bo')
+ask_email('Cxristian@gmail.com.bo.es')
+ask_email('estoNOesUnCorreoNoTieneArroba.com')
