@@ -4,7 +4,7 @@ require 'capybara/cucumber'
 require 'yaml'
 require 'pathname'
 require 'selenium-webdriver'
-
+require 'rspec/expectations'
 
 AfterConfiguration do
   #Load global configuration parameters

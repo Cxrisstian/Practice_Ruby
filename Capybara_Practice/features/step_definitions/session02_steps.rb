@@ -1,3 +1,4 @@
+
 Given(/^I open the search page$/) do
   visit('http://www.google.com')
 end
