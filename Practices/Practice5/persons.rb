@@ -14,6 +14,7 @@ class Register
   def add_persons(name)
     persons.push(create_person(name))
   end
+
   def get_all_persons
     msj = "las personas son : "
     @persons.each do |person|
@@ -56,7 +57,6 @@ class Persons
   def print
     " id , #{id} name :  #{name} |"
   end
-
 end
 
 register = Register.new(1)
